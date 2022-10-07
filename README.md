@@ -7,7 +7,6 @@ steps:
 
 1. Clone [git repo](#git-repo)
 2. [Running](#running)
-3. [Installing packages](#installing-packages)
 
 ## Git Repo
 
@@ -47,7 +46,7 @@ On this problem, we could have multiple solutions and with the idea to show some
 All the approaches use the Set Object benefit to validate the existence of not-repeated items per row, column, and boxes.
 - **Brute-force approach** : In this approach, we're using three different cycles to: validate column, validate rows, and validates boxes. The two first validations are under the same function with two nested for that change how to get the items according to an argument, and the third validation are four cycles to accomplish: testing of unique items in rows and columns inside the box and the movement of the boxes 
 - **Optimize approach** : This approach takes some research, especially for the calculation of the boxes. We unified the loops in two central cycles. The rowItem validation and column validation are straightforward. They are using different Sets to validate the uniqueness; the boxes validation uses the Set but in a variety of rows and columns using the Quotient and remainder of the division to sum the values (0,3,6) in the rows and columns to move the boxes vertically and horizontally.
-### Some Bonus
+### Some Bonuses
 1. Added the capacity in the UI to change the sudoku values readapting the strategies calculation
 2. All the code was in typescript and react with next js
 3. we added patterns to promote the flexibility of the application
