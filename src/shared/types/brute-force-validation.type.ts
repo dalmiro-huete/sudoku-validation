@@ -1,0 +1,1 @@
+export type BruteForceValidation = 'Column' | 'Row' | 'Box'

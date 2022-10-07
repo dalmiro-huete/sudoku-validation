@@ -1,0 +1,1 @@
+export type SudokuValidationResults = 'Finished !' | 'Try Again !'
