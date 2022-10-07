@@ -36,13 +36,11 @@ All source code is located in the `src/` directory:
 3. `src/shared` elements that are shared through the application you will find here patterns, global utilities, types, reusable components etc
 
 ## General Summary About the Project
-On this project I'm solving the problem called **sudoku validation** considering the following points :
-
-1. On this problem we could have multiple solutions and with the idea to show some alternatives to the same problem (brute-force and optimal resolution) was implemented the [Strategy Pattern](https://refactoring.guru/design-patterns/strategy) to switch between strategies using a general context.\
+On this problem, we could have multiple solutions and with the idea to show some alternatives to the same problem (brute-force and optimal resolution) was implemented the [Strategy Pattern](https://refactoring.guru/design-patterns/strategy) to switch between strategies using a general context.\
    &nbsp;
    - You could find this specification here : (src/shared/utils/sudoku-validator)
-   - The strategy is make a general sudoku validator that is feed with the `setMethod` and executed through the `validate` function.
-   - This Object is make in the component `src/modules/sudoku/sudoku.tsx` who is in charge to watch the DOM changes to execute and refresh the strategies with the entries
+   - The strategy is to make a general sudoku validator fed with the `setMethod` and executed through the `validate` function.
+   - This Object is made in the component `src/modules/sudoku/sudoku.tsx` and is in charge of watching the DOM changes to execute and refresh the strategies with the entries
    - The specification of the strategies are in the strategies folder : src/shared/utils/sudoku-validator/strategies.
    
    ### About the strategies : 
@@ -53,4 +51,4 @@ All the approaches use the Set Object benefit to validate the existence of not-r
 1. Added the capacity in the UI to change the sudoku values readapting the strategies calculation
 2. All the code was in typescript and react with next js
 3. we added patterns to promote the flexibility of the application
-4. Application is hosted in the next link : 
+4. Application is hosted in the next link : http://react-assesment.s3-website-us-east-1.amazonaws.com/
